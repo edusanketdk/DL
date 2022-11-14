@@ -61,7 +61,7 @@ plt.show()
 
 
 
-predicted_value=model.predict(x_test)
+predicted_value = model.predict(x_test[n].reshape(1, 28, 28, 1))
 print("Handwritten nuber in the image is= %d" %np.argmax(predicted_value))
 
 
